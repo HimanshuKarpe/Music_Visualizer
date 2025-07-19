@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #00ffc8;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.visualizer-container {
+  width: 100vw;
+  height: 60vh;
+  background: #111;
+  border-top: 2px solid #00ffc8;
+  border-bottom: 2px solid #00ffc8;
+  box-shadow: 0 0 10px #00ffc8;
+  overflow: hidden;
+}
+
+
+.visualizer-container canvas {
+  background: #000;
+  border: 1px solid #fff;
+  display: block;
+  width: 100vw; /* Set canvas width to full viewport width */
+  height: 60vh;  /* Match the height set in JS */
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 2px solid #00ffc8;
+  background-color: transparent;
+  color: #00ffc8;
+  margin: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 6px 12px;
+  background-color: #00ffc8;
+  border: none;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  border-color: #0ff;
+  color: #0ff;
+}
+
+audio {
+  margin: 10px;
+  width: 80%;
+  outline: none;
+}
